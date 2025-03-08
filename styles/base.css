@@ -1,3 +1,7 @@
+body{
+    font-family: "Roboto", sans-serif;
+}
+
 header{
     display: grid;
     align-items: center;
@@ -27,6 +31,12 @@ nav a{
     color: black;
     flex: 1 1 auto;
     text-decoration: none;
+}
+
+nav a:hover {
+	font-weight: 700;
+	text-decoration: underline;
+	text-decoration-color: black;
 }
 
 main{
