@@ -1,12 +1,18 @@
+:root {
+    --primary-color: black;
+    --secondary-color: lightpink;
+    --font: 'Oswald', sans-serif;
+}
+
 header, footer {
-    font-family: 'Oswald', sans-serif;
-    background-color: black;
-    color: lightpink;
+    font-family: var(--font);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     margin: 0 auto;
   }
   
   a {
-    color: lightpink;
+    color: var(--secondary-color);
   }
   
   header {
@@ -41,9 +47,15 @@ header, footer {
     color: #000;
   }
   
-  h1 {
+  h1{
     text-align: center;
     margin: 0 auto;
+  }
+
+  h2{
+    text-align: center;
+    margin: 0 auto;
+    font-family: var(--font);
   }
   
   main {
