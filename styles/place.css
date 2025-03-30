@@ -1,0 +1,70 @@
+:root{
+    --primary-color : #002395;
+    --secondary-color : #007749;
+    --text1 : white;
+    --text2 : black;
+    --accent1 : yellow;
+    --accent2 : red;
+}
+
+@media (max-width: 500px) {
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+
+    .columns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .data-wrapper{
+        text-align: center;
+    }
+    
+    .weather-wrapper{
+        text-align: center;
+    }
+
+    .weather-icon-mobile {
+        display: block;
+        margin: 0 auto 10px;
+    }
+    
+    section{
+        display : grid;
+        padding: 10px;
+        border: 3px double var(--accent2);
+        gap: 10px;
+        margin: 15px;
+    }
+}
+
+
+header, footer{
+    background-color: #002395;
+    color: var(--text1);
+    padding: 5px;
+    text-align: center;
+}
+
+header{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    border-bottom: 20px solid var(--secondary-color);
+}
+
+
+main{
+    font-family: "Poppins", sans-serif;
+    background-color: var(--text2);
+    color: var(--accent1);
+}
+
+p {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
