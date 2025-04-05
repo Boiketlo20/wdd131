@@ -1,0 +1,92 @@
+:root{
+    --color1 : pink;
+    --color2 : gainsboro;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+}
+
+header, footer{
+    background-color: var(--color1);
+    text-align: center;
+}
+
+form{
+    background-color: var(--color2);
+}
+
+.form label{
+    display: block;
+    padding-top: 1rem;
+}
+
+span{
+    font-weight: 800;
+}
+
+main {
+    padding: 1rem;
+}
+
+label, input, select, textarea, text {
+    display: block;
+    width:780px ;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+select, input[type="date"], input[type="text"], textarea {
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+input[type="submit"] {
+    background-color: #f4f1f7;
+    border: 2px solid var(--color1);
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.form span {
+    font-style: italic;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.star-rating label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 20px;
+}
+
+.star-rating {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.star-rating input[type="radio"] {
+    width: 15px;
+    height: 15px;
+}
+

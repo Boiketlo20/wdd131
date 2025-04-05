@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is a product review form page. The form is user friendly on both mobile and desktop screens.">
+        <meta name="author" content="Boiketlo Nzimande">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <title>Product Review Form</title>
+        <link rel="stylesheet" href="styles/form.css">
+        <script src="scripts/form.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Product Review</h1>
+        </header>
+        <main>
+            <form method="get" action="review.html" class="form">
+
+                <label>Product Name <select name="products" id="product-select" required>
+                    <option value="" disabled selected>Select a product</option> 
+                </select>
+                </label>
+
+                <div>Overall Rating</div>
+                <div class="star-rating">
+                    <label> <input type="radio" name="rating" value="1" id="star1" >&#9734;</label>
+                    <label> <input type="radio" name="rating" value="2" id="star2" >&#9734; &#9734;</label>
+                    <label> <input type="radio" name="rating" value="3" id="star3" >&#9734; &#9734; &#9734; </label>
+                    <label> <input type="radio" name="rating" value="4" id="star4"> &#9734; &#9734; &#9734; &#9734;</label>
+                    <label> <input type="radio" name="rating" value="5" id="star5" >&#9734; &#9734; &#9734; &#9734; &#9734; </label>
+                </div>
+
+                <label> Date of Installation <input type="date" name="completeDate" id="date" required></label>
+
+                <div> Which features did you find useful in the product?<span>(check all that apply)</span> </div>
+                <label> <input type="checkbox" name="durability" value="yes"> Durability </label>
+                <label> <input type="checkbox" name="ease" value="yes"> Ease of Use </label>
+                <label> <input type="checkbox" name="performance" value="yes"> Performance </label>
+                <label> <input type="checkbox" name="design" value="yes"> Design </label>
+
+                <div>Written Review<span>(Required)</span></div>
+                <textarea name="message" rows="10" cols="60" required></textarea>
+
+                <div>Your name<span>(Optional)</span></div>
+                <label> <input type="text" name="fname" id="name"> </label>
+
+                <input type="submit" value="Post Review">
+            </form>
+        </main>
+        <footer>
+            <p> © <span id="currentyear"></span> 💕Boiketlo Nzimande💕 South Africa </p>
+            <p> Last Modified: <span id="lastModified"></span> </p>
+        </footer>
+    </body>
+</html>
