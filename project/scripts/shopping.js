@@ -78,6 +78,7 @@ const bags = [
   const highPriced = document.querySelector("#high");
   const lowPriced = document.querySelector("#low");
   const allPrices = document.querySelector("#home");
+  const addButton = document.createElement('button');
   
   highPriced.addEventListener("click", () => {
     createTempleCard(bags.filter(bag => bag.price > 400))
@@ -98,17 +99,34 @@ function createTempleCard(filteredBags) {
       let name = document.createElement('h3');
       let price = document.createElement('p');
       let image = document.createElement('img');
+      let button = document.createElement('button')
 
       name.textContent = bag.bagName;
       price.textContent = `R${bag.price}`;
       image.setAttribute("src", bag.imageUrl);
       image.setAttribute("alt", `${bag.bagName}`);
       image.setAttribute("loading", "lazy");
+      image.setAttribute("loading", "lazy");
+      button.textContent = "Add to Cart";
+      button.classList.add('add-to-cart');
+
 
       card.appendChild(image);
       card.appendChild(name);
       card.appendChild(price);
+      card.appendChild(button)
 
       document.querySelector(".res-grid").appendChild(card);
     });
 }
+
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+function addToCart(bag) {
+  cart.push(bag);
+  localStorage.setItem('cart', JSON.stringify(cart));
+}
+
+addButton.textContent = 'Add to Cart';
+addButton.addEventListener('click', () => addToCart(bag));
+card.appendChild(addButton);

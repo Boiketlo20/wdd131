@@ -1,10 +1,9 @@
-/* Mobile First Styles */
+/* Medium Screen */
 @media only screen and (max-width: 768px) {
     :root {
-        font-size: 14px; /* Base font size adjustment */
+        font-size: 14px; 
     }
 
-    /* Header & Navigation */
     header {
         flex-direction: column;
         padding: 15px 20px;
@@ -24,9 +23,8 @@
         text-align: center;
     }
 
-    /* Hero Section */
     .hero img {
-        height: 50vh; /* Reduced height */
+        height: 50vh; 
     }
 
     .hero .button-style {
@@ -37,7 +35,6 @@
         padding: 10px;
     }
 
-    /* Product Grids */
     .bestseller .container,
     .res-grid {
         grid-template-columns: 1fr !important;
@@ -49,7 +46,6 @@
         margin: 10px auto;
     }
 
-    /* Star Rating */
     .star-rating {
         margin: 20px auto;
         justify-content: center;
@@ -61,7 +57,7 @@
         font-size: 25px;
     }
 
-    /* About Page Layouts */
+
     .section1 {
         flex-direction: column;
     }
@@ -84,7 +80,7 @@
         gap: 30px;
     }
 
-    /* History Section */
+
     .his-container {
         grid-template-columns: 1fr !important;
     }
@@ -96,7 +92,7 @@
         margin-bottom: 20px;
     }
 
-    /* Footer */
+
     footer {
         flex-direction: column;
         padding: 20px;
@@ -111,12 +107,11 @@
         width: 100%;
     }
 
-    /* Contact Form */
+  
     .form-item {
         grid-template-columns: 1fr;
     }
 
-    /* Shopping Page */
     .navigation ul {
         flex-direction: column;
         gap: 10px;
@@ -128,7 +123,6 @@
         max-width: none;
     }
 
-    /* Text Elements */
     h1 {
         font-size: 1.8rem;
     }
@@ -145,14 +139,13 @@
         padding: 10px;
     }
 
-    /* Inputs */
     input[type="text"],
     input[type="email"] {
         max-width: 100%;
     }
 }
 
-/* Very Small Screens */
+/* Small Screen */
 @media only screen and (max-width: 480px) {
     :root {
         font-size: 13px;
