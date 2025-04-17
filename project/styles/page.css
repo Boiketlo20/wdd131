@@ -1,0 +1,455 @@
+:root{
+    --PrimaryColor: #F9DEC9;
+    --SecondaryColor : #333333;
+    --AccentColor1 : #FFB6C1;
+    --AccentColor2 : #F56FA1 ;
+    --font-family1: "Poppins", sans-serif;
+    --font-family2: "Roboto Condensed", sans-serif;
+}
+
+header{
+    display : flex;
+    align-items: center;
+    justify-content: space-between;
+    padding : 20px 80px;
+    background-color: var(--PrimaryColor);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06) ;
+}
+
+h1{
+    font-family: var(--font-family2);
+    font-size: 2.5rem;
+    color: var(--SecondaryColor);
+}
+
+.bestseller p{
+    font-family: var(--font-family2);
+    font-size: 1.2rem;
+    color: var(--SecondaryColor);
+}
+
+.nav{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+.nav li a{
+    text-decoration: none;
+    font-family: var(--font-family1);
+    font-size: 16px;
+    font-weight: 500px;
+    color:  #222;
+}
+
+.nav li a:hover{
+    color: var(--AccentColor2);
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+
+}
+
+.hero img{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: block;
+}
+
+.hero .button-style{
+    text-decoration: none;
+    position: absolute;
+    bottom: 16%;
+    left: 52%;
+    transform: translateX(-50%); /* Centers horizontally only */
+  
+  /* Button styling */
+    padding: 12px 24px;
+    background-color: var(--AccentColor2);
+    color: black;
+    border: none;
+    border-radius: 4px;
+}
+
+.hero .button-style:hover{
+    color: white;
+}
+
+.bestseller{
+    text-align: center;
+}
+
+.bestseller .container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.star-rating {
+    display: flex;
+    align-items: start;
+    width: auto;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin: 40px auto;
+    position: relative;
+}
+  /* hide the inputs */
+.star-rating input {
+    display: none;
+}
+  /* set properties of all labels */
+.star-rating > label {
+    width: 30px;
+    height: 30px;
+    font-family: Arial;
+    font-size: 30px;
+    transition: 0.2s ease;
+    color: var(--SecondaryColor);
+}
+  /* give label a hover state */
+.star-rating label:hover {
+    color:  var(--AccentColor2);
+    transition: 0.2s ease;
+}
+
+.star-rating label:active::before {
+    transform:scale(1.1);
+}
+  
+  /* set shape of unselected label */
+.star-rating label::before {
+    content: '\2606';
+    position: absolute;
+    top: 0px;
+    line-height: 26px;
+}
+  /* set full star shape for checked label and those that come after it */
+.star-rating input:checked ~ label:before {
+    content:'\2605';
+}
+  
+@-moz-document url-prefix() {
+    .star-rating input:checked ~ label:before {
+    font-size: 36px;
+    line-height: 21px;
+    }
+}  
+
+.bestseller .product1{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid var(--AccentColor1);
+    border-radius: 25px;
+    margin: 15px 0;
+}
+
+.bestseller .product1 img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.bestseller .product1 .design{
+    text-align: start;
+    padding: 10px 0;
+}
+
+.bestseller .product1 .design span{
+    color: var(--SecondaryColor);
+    font-size: 14px;
+}
+
+.bestseller .product1 .design h5{
+    font-size: 14px;
+}
+
+.bestseller .product1 .design h4{
+    font-family: var(--font-family1);
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--SecondaryColor);
+}
+
+footer{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    background-color: var(--PrimaryColor);
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+footer p{
+    font-family: var(--font-family2);
+    font-weight: 100;
+}
+
+input[type="text"],
+input[type="email"] {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 11px;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  max-width: 120px;
+}
+
+.col span{
+    font-weight: 900;
+}
+
+.col p{
+    width: 300px; /* Adjust this value as needed */
+    line-height: 1.5; /* Improves readability */
+}
+
+.about-header{
+    position: relative;
+    width: 100%;
+
+}
+
+.about-header img{
+    filter: blur(2px);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: block;
+    margin-bottom: 70px;
+}
+
+.about-header p{
+    position: absolute;
+    bottom: 20%; 
+    left: 50%;
+    transform: translateX(-50%); 
+    padding: 12px 24px;
+    color: white;
+}
+
+.about-header h2{
+    position: absolute;
+    bottom: 30%; 
+    left: 50%;
+    transform: translateX(-50%); 
+    padding: 12px 24px;
+    color: white;
+}
+
+.section1{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.section1 p, h1{
+    text-align: center;
+}
+
+.section1 img{
+    padding-left: 50px;
+    width : 1000px;
+    height : 500px;
+}
+
+.section1 div{
+    padding-left: 40px;
+
+}
+
+.Africa{
+    margin: 40px 0;
+}
+
+.africa-layout{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.africa-layout img, .employee-grid img{
+    width: 100%; 
+    height: auto; 
+    max-width: 200px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.africa-layout figcaption, .employee-grid figcaption{
+    margin-top: 10px; 
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1rem;
+    color: var(--accent2-color);
+}
+
+.africa-layout h2, h5{
+    font-family: var(--font-family2);
+    text-align: center;
+}
+
+
+.africa-layout figure {
+    margin: 0; 
+    text-align: center; 
+}
+
+.History .his-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Equal columns */
+    gap: 20px;
+    align-items: center;
+}
+
+.History h2{
+    text-align: center;
+    grid-column: 1 / -1; /* Span all columns */
+}
+
+.his-container p .text-left{
+    grid-column: 1/2;
+}
+
+.his-container img{
+    grid-column: 2 / 3; /* Middle column */
+    width: 100%; /* Full column width */
+    width: 400px;
+    height: auto;
+    justify-self: center; /* Center horizontally */
+}
+
+.his-container p .text-right{
+    grid-column: 3/4;
+}
+
+/* Contact css*/
+form{
+    margin: 0;
+    width: 100%;
+    max-width: 600px;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--AccentColor2);
+    border-radius: 0.5rem;
+    background-color: var(--PrimaryColor);
+    color: var(--SecondaryColor);
+    display : grid;
+}
+
+label, input, button, textarea{
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+input[type="checkbox"]{
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+button{
+    margin: 2rem;
+    background-color: var(--AccentColor1);
+    color: var(--SecondaryColor);
+    border: none;
+    border-radius: 0.5rem;
+    padding:0.5rem 1rem;
+    font-size:1.4rem;
+}
+
+button:hover{
+    background-color: var(--AccentColor2);
+}
+
+.form-item{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 2fr;
+    margin: 0.5rem 0;
+}
+
+fieldset{
+    display: grid;
+    grid-gap: 0.5rem;
+    margin: 1rem;
+    padding: 0.5rem;
+    border: 1px solid var(--AccentColor2);
+}
+
+.employee-grid{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.employee-grid figure {
+    margin: 0; 
+    text-align: center; 
+}
+
+.map{
+    width: 100%;
+}
+
+.map iframe {
+    width: 100%;
+    height: 300px;
+    max-width: 600px; 
+}
+
+/* Shopping page */
+
+.container{
+    display: grid;
+    gap: 50px 100px; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3,1fr);
+}
+
+#menu {
+    display: none; 
+}
+
+.res-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 20px;
+}
+
+.res-grid img{
+    width: 100%;
+    width: 400px;
+    height: 400px;
+    animation: fade 10s;
+}
+
+.navigation li a{
+    text-decoration: none;
+    font-family: var(--font-family1);
+    font-size: 16px;
+    font-weight: 500px;
+    color:  #222;
+}
+
+.navigation li a:hover{
+    color: var(--AccentColor2);
+}
+
+h2{
+    text-align: center;
+}
+

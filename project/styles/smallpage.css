@@ -1,0 +1,174 @@
+/* Mobile First Styles */
+@media only screen and (max-width: 768px) {
+    :root {
+        font-size: 14px; /* Base font size adjustment */
+    }
+
+    /* Header & Navigation */
+    header {
+        flex-direction: column;
+        padding: 15px 20px;
+        text-align: center;
+    }
+
+
+    .nav {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .nav li {
+        padding: 8px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Hero Section */
+    .hero img {
+        height: 50vh; /* Reduced height */
+    }
+
+    .hero .button-style {
+        bottom: 10%;
+        left: 50%;
+        width: 80%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    /* Product Grids */
+    .bestseller .container,
+    .res-grid {
+        grid-template-columns: 1fr !important;
+        gap: 15px;
+    }
+
+    .bestseller .product1 {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    /* Star Rating */
+    .star-rating {
+        margin: 20px auto;
+        justify-content: center;
+    }
+
+    .star-rating > label {
+        width: 25px;
+        height: 25px;
+        font-size: 25px;
+    }
+
+    /* About Page Layouts */
+    .section1 {
+        flex-direction: column;
+    }
+
+    .section1 img {
+        padding-left: 0;
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .section1 div {
+        padding-left: 0;
+        padding: 0 15px;
+    }
+
+    .africa-layout,
+    .employee-grid {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /* History Section */
+    .his-container {
+        grid-template-columns: 1fr !important;
+    }
+
+    .his-container img {
+        width: 100%;
+        max-width: 300px;
+        grid-column: 1;
+        margin-bottom: 20px;
+    }
+
+    /* Footer */
+    footer {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    footer .col {
+        margin-bottom: 25px;
+        width: 100%;
+    }
+
+    footer .col p {
+        width: 100%;
+    }
+
+    /* Contact Form */
+    .form-item {
+        grid-template-columns: 1fr;
+    }
+
+    /* Shopping Page */
+    .navigation ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .res-grid img {
+        width: 100%;
+        height: auto;
+        max-width: none;
+    }
+
+    /* Text Elements */
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-header h2,
+    .about-header p {
+        position: static;
+        transform: none;
+        text-align: center;
+        padding: 10px;
+    }
+
+    /* Inputs */
+    input[type="text"],
+    input[type="email"] {
+        max-width: 100%;
+    }
+}
+
+/* Very Small Screens */
+@media only screen and (max-width: 480px) {
+    :root {
+        font-size: 13px;
+    }
+
+    .hero img {
+        height: 40vh;
+    }
+
+    .hero .button-style {
+        bottom: 5%;
+        width: 90%;
+        font-size: 0.9rem;
+    }
+
+    .bestseller .product1 {
+        min-width: auto;
+    }
+}
